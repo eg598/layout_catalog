@@ -6,12 +6,10 @@
   flex-direction: column;
   width: 200px;
 
-  &__image{
-    display: flex;
-    align-self: center;
-    margin-top: 16px;
-    margin-bottom: 40px;
-    width: 160px;
+  transition-duration: 300ms;
+
+  &:hover {
+    scale: 1.2;
   }
 
   &__title {
@@ -21,6 +19,19 @@
     letter-spacing: 0%;
     color: $main-accent;
     margin-bottom: 4px;
+  }
+
+  &:hover &__title {
+    color: $hover-color;
+  }
+
+  &__image {
+    display: flex;
+    align-self: center;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    width: 160px;
+    height: 134px;
   }
 
   &__code {
@@ -40,7 +51,7 @@
     margin-bottom: 24px;
     align-items: center;
 
-    &-reviews{
+    &-reviews {
       color: $main-accent;
       font-weight: 400;
       font-size: 10px;
@@ -90,7 +101,7 @@
     justify-content: center;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
       background-color: white;
       color: $blue-accent;
     }

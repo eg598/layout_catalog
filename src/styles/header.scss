@@ -6,11 +6,11 @@
   box-sizing: border-box;
   padding: 0 50px;
 
-  &__logo{
+  &__logo {
     display: flex;
   }
 
-  &__list{
+  &__list {
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,16 +19,16 @@
     justify-content: space-between;
     align-items: center;
 
-    &-item{
+    &-item {
       position: relative;
       margin-right: 20px;
     }
 
-    &-item:last-child{
+    &-item:last-child {
       margin-right: 0;
     }
 
-    &-link{
+    &-link {
       display: flex;
       text-decoration: none;
       line-height: 60px;
@@ -40,18 +40,18 @@
       color: $main-accent;
       text-align: center;
 
-      &:hover{
+      &:hover {
         color: $blue-accent;
       }
 
-      &.is-active{
+      &.is-active {
         color: $blue-accent;
       }
 
-      &.is-active::after{
+      &.is-active::after {
         color: $blue-accent;
         position: absolute;
-        content: "";
+        content: '';
         bottom: 0;
         left: 0;
         border: $header__link-border-size solid $blue-accent;
