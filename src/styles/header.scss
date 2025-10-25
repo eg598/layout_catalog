@@ -6,6 +6,10 @@
   box-sizing: border-box;
   padding: 0 50px;
 
+  & * {
+    transition-duration: 300ms;
+  }
+
   &__logo {
     display: flex;
   }
